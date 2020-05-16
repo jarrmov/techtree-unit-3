@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    padding: 0 10px;
+}
+
+header {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1.3px;
+    
+}
+
+h1 {
+    background: rgb(43, 56, 70);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: rgb(248, 244, 244);
+    text-transform: uppercase;
+}
+
+.intro {
+    text-align: center;
+    border-bottom: 3px solid rgb(43, 56, 70);
+}
+
+.information,
+.bottom {
+    border-top: 2px solid rgb(43, 56, 70);
+    margin-top: 5px;
+}
+
+h2 {
+    color: rgb(43, 56, 70);
+}
+
+h2 {
+    padding: 30px 0;
+}
+
+p,
+label {
+    color: rgb(101, 111, 122);
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+input,
+textarea {
+    background: rgb(248, 244, 244);
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    height: auto;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+select {
+    width: 90%;
+    font-size: 1.1em;
+    height: 60px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    
+}
+
+#zip {
+    width: 30%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 30px;
+}
+
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(100, 228, 237);
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: rgba(100, 228, 237, 0.075)
+}
+
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 70%;
+        margin: auto;
+    } 
+
+    .info br {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .info input,
+      .info select {
+        flex-basis: 70%;
+        flex-grow: 1;
+        margin-bottom: 0;
+      }
+
+      .info label {
+        flex-basis: 25%;
+        font-size: 20px;
+      }
+
+      #zip {
+        max-width: 25%;
+      }
+}

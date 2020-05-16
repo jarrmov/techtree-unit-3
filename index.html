@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        
+            <h1>the code review</h1>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="intro">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+
+            <form action="index.html" method="post">
+        
+             <fieldset>
+                <div class="information">
+                  <h2>Contact Information</h2>
+
+                    <div class="info">
+                        <label for="name">Full Name</label><br>
+                        <input type="text" id="name" name="full-name" placeholder="Required" required>
+                    </div>
+                    <div class="info">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email" name="mail" placeholder="Required" required>
+                    </div>
+                    <div class="info">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="info">
+                        <label for="address">Street Address</label><br>
+                        <input type="text" id="address" name="address" placeholder="Street Address">
+                    </div>
+                    <div class="info">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                    <div class="info">
+                    <label for="state">State</label><br>
+                        <select name="state" id="state">
+                            <option>Choose State</option>
+                            <option value="Western Australia">Western Australia</option>
+                            <option value="Tasmania">Tasmania</option>
+                            <option value="South Australia">South Australia</option>
+                            <option value="Queensland">Queensland</option>
+                            <option value="New South Wales">New South Wales</option>
+                            <option value="Victoria">Victoria</option>
+                        </select>
+                    </div>
+                    <div class="info">
+                        <label for="zip">Zip Code</label><br>
+                        <input type="number" id="zip" name="zip" placeholder="0000">
+                    </div>
+                    
+                </div>
+                <div class="bottom">
+                    <h2>Newsletter</h2>
+                    
+                    <label>Select the newsletters you would like to recieve</label><br>
+                    <br>
+                    <input type="checkbox" id="html-news" value="HTML News" name="interest"><label for="html-news">HTML News</label><br>
+
+                    <input type="checkbox" id="css-news" value="CSS News" name="interest"><label for="css-news">CSS News</label><br>
+
+                    <input type="checkbox" id="java-news" value="Javascript News" name="interest"><label for="java-news">Javascript News</label><br>
+                
+                    <br>
+                    <label class="news-label">Newsletter format</label><br>
+                    <br>
+                    <input type="radio" id="html-format" name="format" value="HTML-format"><label for="html-format">HTML</label><br>
+
+                    <input type="radio" id="plain-format" name="format" value="Plain text"><label for="plain-format">Plain text</label><br>
+
+                
+
+                    <label for="other">Other topics you'd like to hear about</label><br>
+                    <textarea name="other" id="other" cols="20" rows="4"></textarea><br>
+                </div>   
+                <button type="submit">Sign Up</button>
+             </fieldset> 
+             
+             </form>
+        </div>
+    </main>
+
+    <footer>
+        <span>Copyright The Code Review</span>
+    </footer>
+</body>
+</html>
