@@ -136,6 +136,7 @@ select:focus {
         flex-basis: 70%;
         flex-grow: 1;
         margin-bottom: 0;
+        transition: .5s;
       }
 
       .info label {
@@ -145,5 +146,19 @@ select:focus {
 
       #zip {
         max-width: 25%;
-      }
+    }
+
+    button:hover {  
+        padding: 30px;
+        background: rgb(97, 224, 186);
+        transition: .6s;
+
+    }
+
+
+
+
+
+
+
 }
